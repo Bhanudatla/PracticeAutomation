@@ -35,6 +35,10 @@ public class Register {
         driver.findElement(By.xpath("//input[@id='username']")).sendKeys("Bhanutest9");
         driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Bhanutest9");
         driver.findElement(By.cssSelector("button[type='submit']")).click();
+
+        String ExpectedTitle=driver.findElement(By.xpath("//div[@id='flash']")).getText();
+        String ActualTitle="Successfully registered, you can log in now.";
+        assert(ExpectedTitle.equals(ActualTitle));
     }
 
     @Test
