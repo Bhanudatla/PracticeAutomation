@@ -37,6 +37,11 @@ public class Register {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
     }
 
+    @Test
+    public void dropdowntest() {
+        driver.get("https://practice.expandtesting.com/login");
+    }
+
     @Test(groups = {"fast"})
     public void aFastTest() {
         System.out.println("Fast test");
