@@ -29,6 +29,14 @@ public class Register {
 
     }
 
+    @Test
+    public void login() {
+        driver.get("https://practice.expandtesting.com/login");
+        driver.findElement(By.xpath("//input[@id='username']")).sendKeys("Bhanutest9");
+        driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Bhanutest9");
+        driver.findElement(By.cssSelector("button[type='submit']")).click();
+    }
+
     @Test(groups = {"fast"})
     public void aFastTest() {
         System.out.println("Fast test");
