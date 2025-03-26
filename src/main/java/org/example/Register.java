@@ -41,6 +41,11 @@ public class Register {
         assert(ExpectedTitle.equals(ActualTitle));
     }
 
+    @Test
+    public void dropdowntest() {
+        driver.get("https://practice.expandtesting.com/login");
+    }
+
     @Test(groups = {"fast"})
     public void aFastTest() {
         System.out.println("Fast test");
