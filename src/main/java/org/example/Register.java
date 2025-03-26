@@ -37,7 +37,7 @@ public class Register {
         driver.findElement(By.cssSelector("button[type='submit']")).click();
 
         String ExpectedTitle=driver.findElement(By.xpath("//div[@id='flash']")).getText();
-        String ActualTitle="Successfully registered, you can log in now.";
+        String ActualTitle="Successfully logged in, you can log in now.";
         assert(ExpectedTitle.equals(ActualTitle));
     }
 
