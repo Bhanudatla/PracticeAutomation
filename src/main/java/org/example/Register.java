@@ -39,6 +39,7 @@ public class Register {
         String ExpectedTitle=driver.findElement(By.xpath("//div[@id='flash']")).getText();
         String ActualTitle="Successfully logged in, you can log in now.";
         assert(ExpectedTitle.equals(ActualTitle));
+        // comment
     }
 
     @Test
